@@ -37,19 +37,12 @@ h4{
     line-height: 24px;
 }
 
-h1, 
-h2,
-h3, 
-h4,
-h6,
-p{   
+h1,h2,h3,h4,h6,p{   
     color: var(--primary800);     
     font-weight: normal; 
 }  
 
-a,
-a:visited,
-a:focus{
+a,a:visited,a:focus{
     text-decoration: none;
     color: var(--primary500)
 }
@@ -57,7 +50,6 @@ a:focus{
 .logo{     
     font-size: 1.5rem;    
     line-height: 32px;   
-    color:blue; 
 } 
 
 nav .logo{    
