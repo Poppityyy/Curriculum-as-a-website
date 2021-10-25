@@ -108,6 +108,11 @@ nav {
     display: block;
 }
 
+.title-block h3{
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
 .footer {
     padding-top: 2em;
     padding-bottom: 2em;
