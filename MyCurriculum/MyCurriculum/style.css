@@ -12,7 +12,9 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.125rem;
+    line-height: 24px;
 }
 
 h1{
@@ -35,19 +37,12 @@ h4{
     line-height: 24px;
 }
 
-h1, 
-h2,
-h3, 
-h4,
-h6,
-p{   
+h1,h2,h3,h4,h6,p{   
     color: var(--primary800);     
     font-weight: normal; 
 }  
 
-a,
-a:visited,
-a:focus{
+a,a:visited,a:focus{
     text-decoration: none;
     color: var(--primary500)
 }
@@ -55,7 +50,6 @@ a:focus{
 .logo{     
     font-size: 1.5rem;    
     line-height: 32px;   
-    color:blue; 
 } 
 
 nav .logo{    
@@ -64,8 +58,10 @@ nav .logo{
 }
 
 nav .menu{
-display: flex;
-width: 40%;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 nav {
@@ -77,6 +73,9 @@ nav {
     align-items: center;
 }
 
+.active{
+    font-weight: bold;
+}
 
 .safe-area {
     max-width: 1200px;
@@ -107,4 +106,21 @@ nav {
     height: 400px;
     object-fit: cover;
     display: block;
+}
+
+.footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: var(--primary500);
+    position: relative;
+}
+
+.footer::after{
+    content: "" ;
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    top: 50%;
+    margin-left: 10px;
+    background-color: var(--primary500);
 }
